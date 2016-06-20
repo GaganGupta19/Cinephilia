@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.udacity.gagan.cinephilia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name=".Network.NetworkController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="DetailActivity"
+            android:label="@string/projectname"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <provider
+            android:name="in.udacity.gagan.cinephilia.MovieDB.MoviesContentProvider"
+            android:authorities="in.udacity.gagan.cinephilia"
+            android:exported="true" />
+    </application>
+
+</manifest>

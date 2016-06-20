@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movie_details_card"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImage"
+        android:layout_marginTop="172dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#FFF"/>
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_marginTop="150dp"
+        android:text="hello"
+        android:padding="15dp"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:minHeight="54dp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_marginTop="290dp"
+        android:text="5.0"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stars"
+        android:textColor="@android:color/white" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ratingicon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="307dp"
+        android:layout_alignLeft="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
