@@ -1,15 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 27
 
     defaultConfig {
-        applicationId "in.udacity.gagan.cinephilia"
-        minSdkVersion 22
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.moviephilia"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 2
+        versionName "1.01"
         multiDexEnabled true
     }
     buildTypes {
@@ -17,6 +16,14 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
     }
     buildTypes.each {
         it.buildConfigField 'String', 'THE_MOVIE_DATABASE_API_KEY', TheMovieDatabasepApiKey
@@ -26,14 +33,17 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:cardview-v7:23.4.0'
-    compile 'com.android.support:recyclerview-v7:23.4.0'
-    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.android.support:cardview-v7:27.0.2'
+    compile 'com.android.support:recyclerview-v7:27.0.2'
+    compile 'com.android.volley:volley:1.1.0'
     //compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.github.bumptech.glide:volley-integration:1.4.0'
-    compile 'de.hdodenhof:circleimageview:2.0.0'
-    compile 'com.android.support:palette-v7:23.4.0'
+   // compile 'com.github.bumptech.glide:volley-integration:1.4.0'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.android.support:palette-v7:27.0.2'
+    compile files('src/main/libs/glide-3.7.0.jar')
+    compile files('src/main/libs/glide-volley-integration-1.5.0.jar')
+    compile 'com.google.android.gms:play-services-ads:11.8.0'
 
 }

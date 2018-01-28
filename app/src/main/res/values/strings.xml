@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cinephilia</string>
+    <string name="app_name">Moviephilia</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_popular_movie">Popular Movies App</string>
     <string name="read_more">Read More</string>
@@ -13,7 +13,7 @@
     <string name="genre">Genre/Genres</string>
     <string name="status">Status</string>
     <string name="extras">Details</string>
-    <string name="projectname">Cinephilia</string>
+    <string name="projectname">MoviePhilia</string>
     <string name="plot">Plot Synopsis</string>
     <string name="poster_path">http://image.tmdb.org/t/p/w342/</string>
     <string name="backdrop_path">http://image.tmdb.org/t/p/w780/</string>
@@ -35,4 +35,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail">DetailActivity</string>
+
+
+    <string name="YOUR_ADMOB_Test_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="AdUnitId_Test_Banner">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!--<string name="AdUnitId_Banner">ca-app-pub-5892637647351088/1033127684</string>-->
+   <!-- <string name="AdUnitId_Interstitial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="AdUnitId_RewardedVideoAd">ca-app-pub-3940256099942544/5224354917</string>-->
+
 </resources>
